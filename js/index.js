@@ -30,6 +30,17 @@ modalTrigger.addEventListener("click", function () {
 
     // позиционируем наше окно по середине, где 175 - половина ширины модального окна
     modalActive.style.left = "calc(50% - " + (175 - scrollbarWidth / 2) + "px)";
+
+    setTimeout(function () {
+        const photo = document.querySelector('.animated-photo');
+        photo.style.display = 'block'; // Показываем фото
+    }, 5000); // 5 секунд
+
+    // Если нужно, чтобы фото исчезло через 10 секунд после открытия:
+    setTimeout(function () {
+        const photo = document.querySelector('.animated-photo');
+        photo.style.display = 'none'; // Скрываем фото
+    }, 10000); // 10 секунд
 });
 
 // нажатие на крестик закрытия модального окна

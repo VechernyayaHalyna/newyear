@@ -143,3 +143,29 @@ h1 {
   }
 }
   
+.animated-photo {
+    display: none;
+    width: 400px; /* размер фото можно подкорректировать */
+    height: auto;
+    border-radius: 50%;
+    animation: fadeInOut 10s ease-in-out; /* продолжительность анимации 10 секунд */
+}
+
+/* Анимация для плавного появления и исчезновения */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
