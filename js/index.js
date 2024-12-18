@@ -34,13 +34,13 @@ modalTrigger.addEventListener("click", function () {
     setTimeout(function () {
         const photo = document.querySelector('.animated-photo');
         photo.style.display = 'block'; // Показываем фото
-    }, 5000); // 5 секунд
+    }, 3000); // 5 секунд
 
     // Если нужно, чтобы фото исчезло через 10 секунд после открытия:
     setTimeout(function () {
         const photo = document.querySelector('.animated-photo');
         photo.style.display = 'none'; // Скрываем фото
-    }, 10000); // 10 секунд
+    }, 7000); // 10 секунд
 });
 
 // нажатие на крестик закрытия модального окна
