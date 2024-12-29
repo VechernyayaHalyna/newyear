@@ -1,11 +1,11 @@
 const audio = document.getElementById('backgroundMusic');
 
         // Убеждаемся, что музыка начнет играть после загрузки страницы
-        window.addEventListener('load', () => {
+        document.body.addEventListener('click', () => {
             audio.play().catch((error) => {
-                console.warn("Автоматическое воспроизведение заблокировано браузером:", error);
+                console.warn("Ошибка воспроизведения:", error);
             });
-        });
+        }, { once: true }); // Срабатывает только один раз
 
 audio.volume = 0.5;
 
