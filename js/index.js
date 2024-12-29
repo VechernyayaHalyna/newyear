@@ -1,3 +1,14 @@
+const audio = document.getElementById('backgroundMusic');
+
+        // Убеждаемся, что музыка начнет играть после загрузки страницы
+        window.addEventListener('load', () => {
+            audio.play().catch((error) => {
+                console.warn("Автоматическое воспроизведение заблокировано браузером:", error);
+            });
+        });
+
+audio.volume = 0.5;
+
 // устанавливаем триггер для модального окна (название можно изменить)
 const modalTrigger = document.getElementsByClassName("trigger")[0];
 
